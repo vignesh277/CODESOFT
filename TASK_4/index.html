@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img src="./wassup.png" alt="" height="40">
+            <h1>Username</h1>
+        </div>
+        <div class="message__area" id="messageArea">
+            
+        </div>
+        <div class="input__area">
+            <textarea  id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+            <button id="sendButton">Send</button>
+        </div>
+    </section>
+
+
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enter Your Name</h2>
+            <input type="text" id="usernameInput" placeholder="Your Name">
+            <button id="authButton">Join Chat</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
